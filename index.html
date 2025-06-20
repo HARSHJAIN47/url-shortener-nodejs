@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Url Shortener</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form id="url-form">
+          <h1 class="main_heading txt-center">Url Shortener</h1>
+          <div class="url_inputfields">
+            <label for="urlInput" class="txt-center">Enter URL:</label>
+            <input name="url" type="url" id="urlInput" required />
+          </div>
+          <div class="url_inputfields">
+            <label for="customUrl">Custom Short URL (optional):</label>
+            <input name="shortCode" type="text" id="customUrl" />
+          </div>
+          <button type="submit" class="txt-center" id="shortenBtn">
+            Shorten
+          </button>
+        </form>
+        <div class="result">
+          <h4>Your shortened url is :</h4>
+          <ul class="result-list">
+            <!-- Shortened URLs will be appended here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
